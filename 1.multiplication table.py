@@ -3,8 +3,8 @@
 def xx(x=1,y=1):
     z=x*y
     while(x<=9):
-        if(y<=9):
-            print('%d*%d=%d' %(x,y,z))
+        print('%d*%d=%d' %(x,y,z))
+        if(y<9):
             return xx(x,y+1)
         else:
             return xx(x+1,x+1)
